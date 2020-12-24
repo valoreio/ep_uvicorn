@@ -12,6 +12,6 @@ permissions:
     type:
       - file
 artifacts:
-files:
-- '**/*'
-name: s3_github_ec2_latestbuild.zip
+  files:
+    - '**/*'
+  name: s3_github_ec2_latestbuild.zip
