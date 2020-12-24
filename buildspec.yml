@@ -1,17 +1,13 @@
 version: 0.2
 os: linux
 files:
-  - source: /var/www/django/contatoproj
-    destination: /var/www/django/contatoproj
+  - source: /index.html/
+    destination: /var/www/django/contatoproj/templates
     owner: admweb
 permissions:
   - object: /var/www/django/contatoproj
-    pattern: "**"
     owner: admweb
     group: admweb
     mode: 755
     type:
       - file
-artifacts:
-  files:
-    - '**/*'
