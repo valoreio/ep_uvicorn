@@ -15,6 +15,3 @@ permissions:
 artifacts:
   files:
     - '**/*'
-  base-directory: /var/www/django/contatoproj
-  name: build-artifact-name
-  discard-paths: no
