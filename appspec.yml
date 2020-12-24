@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /templates/index.html
+    destination: /var/www/django/contatoproj/templates
+    owner: admweb
+permissions:
+  - object: /var/www/django/contatoproj/templates
+    pattern: "**"
+    owner: admweb
+    group: admweb
+    mode: 755
+    type:
+      - file
