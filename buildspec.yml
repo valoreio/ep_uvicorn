@@ -1,14 +1,20 @@
 version: 0.2
 os: linux
 files:
-  - source: /templates/index.html
-    destination: /var/www/django/contatoproj/templates
+  - source: /var/www/django/contatoproj
+    destination: /var/www/django/contatoproj
     owner: admweb
 permissions:
-  - object: /var/www/django/contatoproj/templates
+  - object: /var/www/django/contatoproj
     pattern: "**"
     owner: admweb
     group: admweb
     mode: 755
     type:
       - file
+artifacts:
+  files:
+    - '**/*'
+  base-directory: /var/www/django/contatoproj
+  name: build-artifact-name
+  discard-paths: no
